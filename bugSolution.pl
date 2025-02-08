@@ -1,0 +1,1 @@
+use strict; use warnings; use Sort::Naturally; my %hash = (a => 1, b => 2, c => 3); my @sortedKeys = sort {lc $a cmp lc $b} keys %hash; foreach my $key (@sortedKeys) { print "$key => $hash{$key}\n"; }
